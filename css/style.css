@@ -747,7 +747,7 @@ footer .footer-contenedor div img{
         height: 180px;
         padding: 2px;
         }
-
+    }
 @media screen and (max-width: 350px){
     .carousel-inner{
         width: 100%;
@@ -784,10 +784,9 @@ footer .footer-contenedor div img{
         
     }
 
-    .carousel-item{
+    .carousel-item {
         width: 100%;
         height: 150px;
         padding: 5px;
-    } 
-    
+    }     
 }
