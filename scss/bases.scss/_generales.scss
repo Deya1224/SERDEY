@@ -1,0 +1,85 @@
+
+/*----------------RESET------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+/*--header con BOOTSTRAP--*/
+
+.navbar .palabra{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;        
+    font-weight: bolder;
+}
+
+.navbar .navbar-nav a{
+    font-size: 18px;
+    padding: 10px;
+}
+
+header {
+    background-color:rgb(194, 15, 72);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .container-fluid .img{
+    width: 30px;
+    height: 30px;
+}
+
+.boton{
+    border: 2px white;
+    background-color: rgb(236, 122, 208);
+    
+}
+
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.text-danger{
+    color: white;
+}
+
+.lista:hover{
+    background-color: rgba(255, 186, 240, 0.555);
+}
+
+.lista{    
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/*-- BOOTSTRAP APLICADO EN LAS PAGINAS--*/
+
+/*-- index.html--carrusel--*/
+
+.carousel-item{
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+}
+
+/*-- novedades.html--carrusel*/
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+}
+
+/*-- productos.html- carrusel-*/
+
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+
+}
