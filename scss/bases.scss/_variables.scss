@@ -1,0 +1,26 @@
+$colores: 
+rgb(219, 71, 125), rgb(248, 9, 88), rgb(248, 9, 88);
+
+$font-size: 12px, 14px, 16px, 18px, 30px, 35px, 40px;
+
+
+//! extends!--//  
+
+%flex-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+//! mixin!--//  
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+

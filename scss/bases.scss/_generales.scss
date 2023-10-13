@@ -83,3 +83,57 @@ header .container-fluid .img{
     margin: 10px;
 
 }
+
+
+/*-- hover-*/
+
+.ofertas-imperdibles div:hover{
+        box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+        -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+        -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+   
+}
+
+.joyitas div:hover{
+    box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+}
+
+.relacion-productos div:hover{
+    box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);    
+}
+
+.ofertas-imperdibles div img{
+    transition: 1s;
+}
+
+.ofertas-imperdibles div img:hover{
+    transform: scale(1.1);
+}
+
+.grid-container img{
+    transition: 2s;
+}
+
+.grid-container img:hover{
+    transform: scale(1.1);
+}
+
+.joyitas div img{
+    transition: 1s;
+}
+
+.joyitas div img:hover{
+    transform: scale(1.1);
+}
+
+.relacion-productos div img{
+    transition: 1s;
+}
+
+.relacion-productos div img:hover{
+    transform: scale(1.1);
+}

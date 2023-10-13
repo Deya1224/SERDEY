@@ -1,3 +1,9 @@
+.ofertas .ofertas-imperdibles, .blog .noticias, .joyas .joyitas, .listado .relacion-productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
 /*----------------RESET------------------*/
 * {
   margin: 0;
@@ -63,6 +69,46 @@ header .container-fluid .img {
   height: 500px;
   margin: 10px; }
 
+/*-- hover-*/
+.ofertas-imperdibles div:hover {
+  box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
+
+.joyitas div:hover {
+  box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
+
+.relacion-productos div:hover {
+  box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
+
+.ofertas-imperdibles div img {
+  transition: 1s; }
+
+.ofertas-imperdibles div img:hover {
+  transform: scale(1.1); }
+
+.grid-container img {
+  transition: 2s; }
+
+.grid-container img:hover {
+  transform: scale(1.1); }
+
+.joyitas div img {
+  transition: 1s; }
+
+.joyitas div img:hover {
+  transform: scale(1.1); }
+
+.relacion-productos div img {
+  transition: 1s; }
+
+.relacion-productos div img:hover {
+  transform: scale(1.1); }
+
 /*-- index.html--*/
 .bienvenidos {
   background-image: url("../img/portada.jfif");
@@ -71,11 +117,11 @@ header .container-fluid .img {
   justify-content: center;
   align-items: center; }
   .bienvenidos div {
-    width: 50%;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    height: 50px;
     flex-direction: column;
     font-family: 'Mulish', sans-serif;
     text-align: center; }
@@ -102,8 +148,8 @@ header .container-fluid .img {
 
 .tendencia h1 {
   color: #f80958;
-  text-align: center;
   font-size: 35px;
+  text-align: center;
   background-color: #f0cbe0;
   padding: 5px;
   margin-bottom: 10px;
@@ -154,130 +200,103 @@ header .container-fluid .img {
       -moz-box-shadow: 4px 8px 13px 0px rgba(0, 0, 0, 0.54); }
 
 .ofertas h2 {
-  text-align: center;
   color: #f80958;
   font-size: 30px;
+  text-align: center;
   background-color: #f0cbe0;
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 10px; }
 
-.ofertas .ofertas-imperdibles {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .ofertas .ofertas-imperdibles :hover {
-    box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-    -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-    -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
-  .ofertas .ofertas-imperdibles div {
-    width: 300px;
-    height: 380px;
-    border: 2px solid #db477d;
-    text-align: center;
-    font-size: 10px;
+.ofertas .ofertas-imperdibles div {
+  width: 300px;
+  height: 380px;
+  border: 2px solid #db477d;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px;
+  margin-bottom: 20px; }
+  .ofertas .ofertas-imperdibles div img {
+    width: 250px;
+    height: 250px;
+    margin: 5px; }
+  .ofertas .ofertas-imperdibles div h3 {
+    font-size: 20px;
+    margin: 5px;
+    color: #f80958; }
+  .ofertas .ofertas-imperdibles div h4 {
+    font-size: 15px;
     margin: 10px;
-    margin-bottom: 20px; }
-    .ofertas .ofertas-imperdibles div img {
-      width: 250px;
-      height: 250px;
-      margin: 5px; }
-    .ofertas .ofertas-imperdibles div h3 {
-      font-size: 20px;
-      margin: 5px;
-      color: #f80958; }
-    .ofertas .ofertas-imperdibles div h5 {
-      font-size: 15px;
-      margin: 10px;
-      color: #db477d; }
-    .ofertas .ofertas-imperdibles div a {
-      text-decoration: none;
-      font-size: 20px;
-      color: #db477d;
-      background-color: #f8f8f8;
-      padding: 5px;
-      border: 2px solid #f80958;
-      border-radius: 5px;
-      margin: 10px; }
-      .ofertas .ofertas-imperdibles div a ::hover {
-        background-color: #db477d;
-        color: white; }
+    color: #db477d; }
+  .ofertas .ofertas-imperdibles div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #db477d;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border: 2px solid #f80958;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f0cbe0; }
 
 .blog h1 {
   color: #f80958;
-  text-align: center;
   font-size: 30px;
+  text-align: center;
   background-color: #f0cbe0;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.blog .noticias {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .blog .noticias div {
-    width: 300px;
-    height: 320px;
-    border: 2px solid #db477d;
-    text-align: center;
-    margin: 10px;
-    margin-bottom: 20px; }
-    .blog .noticias div img {
-      width: 250px;
-      height: 250px;
-      margin: 5px; }
-    .blog .noticias div a {
-      font-size: 15px;
-      font-weight: bolder;
-      padding: 5px;
-      color: #db477d; }
+.blog .noticias div {
+  width: 300px;
+  height: 320px;
+  border: 2px solid #db477d;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px; }
+  .blog .noticias div img {
+    width: 250px;
+    height: 250px;
+    margin: 5px; }
+  .blog .noticias div a {
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+    color: #db477d; }
 
 /*-- bisuteria.html--*/
-.joyas .joyitas {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .joyas .joyitas div {
-    width: 300px;
-    height: 380px;
-    border: 2px solid #db477d;
-    text-align: center;
-    font-size: 10px;
+.joyas .joyitas div {
+  width: 300px;
+  height: 380px;
+  border: 2px solid #db477d;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px;
+  margin-bottom: 20px; }
+  .joyas .joyitas div img {
+    width: 250px;
+    height: 250px;
+    margin: 5px; }
+  .joyas .joyitas div h3 {
+    font-size: 20px;
+    margin: 5px;
+    color: #f80958; }
+  .joyas .joyitas div h4 {
+    font-size: 15px;
     margin: 10px;
-    margin-bottom: 20px; }
-    .joyas .joyitas div :hover {
-      box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-      -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-      -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
-    .joyas .joyitas div img {
-      width: 250px;
-      height: 250px;
-      margin: 5px; }
-    .joyas .joyitas div h3 {
-      font-size: 20px;
-      margin: 5px;
-      color: #f80958; }
-    .joyas .joyitas div h5 {
-      font-size: 15px;
-      margin: 10px;
-      color: #db477d; }
-    .joyas .joyitas div a {
-      text-decoration: none;
-      font-size: 20px;
-      color: #db477d;
-      background-color: #f8f8f8;
-      padding: 5px;
-      border: 2px solid #f80958;
-      border-radius: 5px;
-      margin: 10px; }
-      .joyas .joyitas div a :hover {
-        background-color: #db477d;
-        color: white; }
+    color: #db477d; }
+  .joyas .joyitas div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #db477d;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border: 2px solid #f80958;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f0cbe0; }
 
 .descuento img {
   width: 100%;
@@ -298,9 +317,9 @@ header .container-fluid .img {
 
 .encuesta {
   display: flex;
-  background-color: #ddbbd3;
   justify-content: center;
   align-items: center;
+  background-color: #ddbbd3;
   flex-direction: row;
   font-family: 'Mulish', sans-serif;
   text-align: center;
@@ -339,55 +358,13 @@ header .container-fluid .img {
 /*-- novedades.html--*/
 .octubre h1 {
   color: #f80958;
-  text-align: center;
   font-size: 30px;
+  text-align: center;
   background-color: #f0cbe0;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.listado .relacion-productos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .listado .relacion-productos div {
-    width: 300px;
-    height: 380px;
-    border: 2px solid #db477d;
-    text-align: center;
-    font-size: 10px;
-    margin: 10px;
-    margin-bottom: 20px; }
-    .listado .relacion-productos div :hover {
-      box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-      -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-      -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
-    .listado .relacion-productos div img {
-      width: 250px;
-      height: 250px;
-      margin: 5px; }
-    .listado .relacion-productos div h3 {
-      font-size: 20px;
-      margin: 5px;
-      color: #f80958; }
-    .listado .relacion-productos div h5 {
-      font-size: 15px;
-      margin: 10px;
-      color: #db477d; }
-    .listado .relacion-productos div a {
-      text-decoration: none;
-      font-size: 20px;
-      color: #db477d;
-      background-color: #f8f8f8;
-      padding: 5px;
-      border: 2px solid #f80958;
-      border-radius: 5px;
-      margin: 10px; }
-      .listado .relacion-productos div a :hover {
-        background-color: #db477d;
-        color: white; }
 
 /*-- productos.html--*/
 .descuento img {
@@ -395,47 +372,36 @@ header .container-fluid .img {
   height: 350px;
   padding: 10px; }
 
-.listado .relacion-productos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .listado .relacion-productos div {
-    width: 300px;
-    height: 380px;
-    border: 2px solid #db477d;
-    text-align: center;
-    font-size: 10px;
+.listado .relacion-productos div {
+  width: 300px;
+  height: 380px;
+  border: 2px solid #db477d;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px;
+  margin-bottom: 20px; }
+  .listado .relacion-productos div img {
+    width: 250px;
+    height: 250px;
+    margin: 5px; }
+  .listado .relacion-productos div h3 {
+    font-size: 20px;
+    margin: 5px;
+    color: #f80958; }
+  .listado .relacion-productos div h4 {
+    font-size: 15px;
     margin: 10px;
-    margin-bottom: 20px; }
-    .listado .relacion-productos div :hover {
-      box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-      -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
-      -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
-    .listado .relacion-productos div img {
-      width: 250px;
-      height: 250px;
-      margin: 5px; }
-    .listado .relacion-productos div h3 {
-      font-size: 20px;
-      margin: 5px;
-      color: #f80958; }
-    .listado .relacion-productos div h5 {
-      font-size: 15px;
-      margin: 10px;
-      color: #db477d; }
-    .listado .relacion-productos div a {
-      text-decoration: none;
-      font-size: 20px;
-      color: #db477d;
-      background-color: #f8f8f8;
-      padding: 5px;
-      border: 2px solid #f80958;
-      border-radius: 5px;
-      margin: 10px; }
-      .listado .relacion-productos div a :hover {
-        background-color: #db477d;
-        color: white; }
+    color: #db477d; }
+  .listado .relacion-productos div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #db477d;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border: 2px solid #f80958;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f0cbe0; }
 
 footer {
   background-color: #c20f48;

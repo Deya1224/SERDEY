@@ -1,26 +1,22 @@
 /*-- index.html--*/
 .bienvenidos{
     background-image: url("../img/portada.jfif");   
-    background-size: cover;     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    background-size: cover;
+    @include flex(flex, center, center)     
+        
     div{
+        @include flex(flex, center, center)
         width: 50%;
         height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
         font-family: 'Mulish', sans-serif;
         text-align: center;
 
         h2{
-            font-size: 40px;
-            color:rgb(248, 9, 88);
+            font-size: nth($font-size, 7);
+            color: nth($colores, 3);    
             margin-top: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 10px;   
                 ::selection{
                 background-color: rgb(235, 63, 118);
                 color: rgb(253, 249, 249);}
@@ -46,9 +42,9 @@
 
 .tendencia{
     h1{
-        color:rgb(248, 9, 88);
+        color: nth($colores,2);
+        font-size: nth($font-size, 6);        
         text-align: center;
-        font-size: 35px;
         background-color: rgb(240, 203, 224);
         padding: 5px;
         margin-bottom: 10px;
@@ -112,26 +108,18 @@
 
 .ofertas{
     h2{
+        color: nth($colores,3);
+        font-size: nth($font-size, 5);        
         text-align: center;
-        color:rgb(248, 9, 88);    
-        font-size: 30px;
         background-color: rgb(240, 203, 224);
         padding: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
-    .ofertas-imperdibles{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        :hover{
-            box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-            -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-            -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-        }
-
+    .ofertas-imperdibles{       
+        @extend %flex-center;                  
+        
         div{
             width: 300px;
             height: 380px;
@@ -140,6 +128,8 @@
             font-size: 10px;
             margin: 10px;
             margin-bottom: 20px;
+                  
+            
             img{
                 width: 250px;
                 height: 250px;
@@ -152,7 +142,7 @@
                 color: rgb(248, 9, 88);
             }
 
-            h5{
+            h4{
                 font-size: 15px;
                 margin: 10px;
                 color: rgb(219, 71, 125);
@@ -167,10 +157,8 @@
                 border: 2px solid rgb(248, 9, 88);
                 border-radius: 5px;
                 margin: 10px;
-                ::hover{
-                    background-color: rgb(219, 71, 125);
-                    color: white;
-                }
+                background-color: rgb(240, 203, 224);
+              
             }
         }
     }
@@ -178,10 +166,9 @@
 
 .blog{
     h1{
-        color:rgb(248, 9, 88);
-        text-align: center;
-        font-size: 30px;
-        background-color: rgb(240, 203, 224);
+        color: nth($colores,3);
+        font-size: nth($font-size, 5);        
+        text-align: center;background-color: rgb(240, 203, 224);
         padding: 10px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -189,10 +176,7 @@
 
     }
     .noticias{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend %flex-center; 
         div{
             width: 300px;
             height: 320px;
@@ -219,10 +203,7 @@
 
 .joyas{
     .joyitas{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend %flex-center;    
         div{
             width: 300px;
             height: 380px;
@@ -231,11 +212,7 @@
             font-size: 10px;
             margin: 10px;
             margin-bottom: 20px;
-            :hover{
-                box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-                -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-                -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-            }
+            
             img{
                 width: 250px;
                 height: 250px;
@@ -246,7 +223,7 @@
                 margin: 5px;
                 color: rgb(248, 9, 88);
             }
-            h5{
+            h4{
                 font-size: 15px;
                 margin: 10px;
                 color: rgb(219, 71, 125);
@@ -261,10 +238,8 @@
                 border: 2px solid rgb(248, 9, 88);
                 border-radius: 5px;
                 margin: 10px;
-                :hover{
-                    background-color: rgb(219, 71, 125);
-                    color: white;
-                }
+                background-color: rgb(240, 203, 224);
+                
             }
         }
     }
@@ -294,10 +269,8 @@
 }
 
 .encuesta{
-    display: flex;
+    @include flex(flex, center, center)
     background-color: rgb(221, 187, 211);
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     font-family: 'Mulish', sans-serif;
     text-align: center;
@@ -354,9 +327,7 @@
 }
 
 .mapa{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center)
     flex-wrap: wrap; 
     text-align: center;
     margin: 20px;
@@ -366,9 +337,9 @@
 
 .octubre{
     h1{
-        color:rgb(248, 9, 88);
+        color: nth($colores,3);
+        font-size: nth($font-size, 5);        
         text-align: center;
-        font-size: 30px;
         background-color: rgb(240, 203, 224);
         padding: 10px;
         margin-bottom: 10px;
@@ -377,57 +348,7 @@
     }
 }
 
-.listado{
-    .relacion-productos{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        div{
-            width: 300px;
-            height: 380px;
-            border: 2px solid rgb(219, 71, 125);
-            text-align: center;    
-            font-size: 10px;
-            margin: 10px;
-            margin-bottom: 20px;
-            :hover{
-                box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-                -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-                -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-            }
-            img{
-                width: 250px;
-                height: 250px;
-                margin: 5px;                
-            }
-            h3{
-                font-size: 20px;
-                margin: 5px;
-                color: rgb(248, 9, 88);
-            }
-            h5{
-                font-size: 15px;
-                margin: 10px;
-                color: rgb(219, 71, 125);
-            }
-            a{
-                text-decoration: none;
-                font-size: 20px;
-                color: rgb(219, 71, 125);
-                background-color: rgb(248, 248, 248);
-                padding: 5px;
-                border: 2px solid rgb(248, 9, 88);
-                border-radius: 5px;
-                margin: 10px;
-                :hover{
-                    background-color: rgb(219, 71, 125);
-                    color: white;
-                }
-            }
-        }
-    }
-}
+
 
 /*-- productos.html--*/
 
@@ -438,25 +359,21 @@
         padding: 10px;
     }
 }
+
 .listado{
     .relacion-productos{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend %flex-center; 
+        
         div{
+            
             width: 300px;
             height: 380px;
             border: 2px solid rgb(219, 71, 125);
             text-align: center;    
             font-size: 10px;
             margin: 10px;
-            margin-bottom: 20px; 
-            :hover{
-                box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-                -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-                -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-            }           
+            margin-bottom: 20px;             
+                       
             img{
                 width: 250px;
                 height: 250px;
@@ -467,7 +384,7 @@
                 margin: 5px;
                 color: rgb(248, 9, 88);
             }
-            h5{
+            h4{
                 font-size: 15px;
                 margin: 10px;
                 color: rgb(219, 71, 125);
@@ -480,12 +397,9 @@
                 padding: 5px;
                 border: 2px solid rgb(248, 9, 88);
                 border-radius: 5px;
-                margin: 10px;
-                :hover{
-                    background-color: rgb(219, 71, 125);
-                    color: white;
-                }
-            }
+                margin: 10px;   
+                background-color: rgb(240, 203, 224);          
+              }
         }
     }
 }
