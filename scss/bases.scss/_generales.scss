@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*--header con BOOTSTRAP--*/
@@ -15,8 +15,7 @@ body {
     color: white;
     font-size: 40px;
     padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;        
-    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .navbar .navbar-nav a{
@@ -55,7 +54,7 @@ header .container-fluid .img{
 }
 
 .lista{    
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: fantasy;
 }
 
 /*-- BOOTSTRAP APLICADO EN LAS PAGINAS--*/
@@ -87,53 +86,59 @@ header .container-fluid .img{
 
 /*-- hover-*/
 
-.ofertas-imperdibles div:hover{
-        box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-        -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-        -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-   
+.ofertas-imperdibles div{
+    box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
 }
 
+.ofertas-imperdibles div:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+
+.grid-container img:hover{
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+
 .joyitas div:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+.joyitas div{
+    box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+}
+
+.relacion-productos div{
     box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
     -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
     -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
 }
 
 .relacion-productos div:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+
+.stock div:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.stock div{
     box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
     -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
-    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);    
+    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
 }
 
-.ofertas-imperdibles div img{
-    transition: 1s;
-}
-
-.ofertas-imperdibles div img:hover{
-    transform: scale(1.1);
-}
-
-.grid-container img{
-    transition: 2s;
-}
-
-.grid-container img:hover{
-    transform: scale(1.1);
-}
-
-.joyitas div img{
-    transition: 1s;
-}
-
-.joyitas div img:hover{
-    transform: scale(1.1);
-}
-
-.relacion-productos div img{
-    transition: 1s;
-}
-
-.relacion-productos div img:hover{
-    transform: scale(1.1);
+.blog div{
+    box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 11px 13px 13px 0px rgba(0,0,0,0.54);
 }

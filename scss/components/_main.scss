@@ -9,7 +9,7 @@
         width: 50%;
         height: 50px;
         flex-direction: column;
-        font-family: 'Mulish', sans-serif;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
 
         h2{
@@ -34,8 +34,8 @@
     }
     
     img{
-        width: 500px;
-        height: 300px;
+        width: 400px;
+        height: 280px;
         margin: 20px;
     }
 }
@@ -49,7 +49,7 @@
         padding: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
@@ -115,6 +115,7 @@
         padding: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
     .ofertas-imperdibles{       
@@ -128,7 +129,7 @@
             font-size: 10px;
             margin: 10px;
             margin-bottom: 20px;
-                  
+            border-radius: 2%;                  
             
             img{
                 width: 250px;
@@ -172,7 +173,7 @@
         padding: 10px;
         margin-bottom: 10px;
         margin-top: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     }
     .noticias{
@@ -183,7 +184,8 @@
             border: 2px solid rgb(219, 71, 125);
             text-align: center;                
             margin: 10px;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
+            border-radius: 2%;
             img{
                 width: 250px;
                 height: 250px;
@@ -200,6 +202,47 @@
 }
 
 /*-- bisuteria.html--*/
+.explora{
+    background-image: url("../img/portada.jfif");   
+    background-size: cover;
+    @include flex(flex, center, center)  
+    margin:8px;   
+        
+    div{
+        @include flex(flex, center, center)
+        width: 50%;
+        height: 50px;
+        flex-direction: column;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        
+        h2{
+            font-size: nth($font-size, 7);
+            color: nth($colores, 3);    
+            margin-top: 10px;
+            margin-bottom: 10px;   
+                ::selection{
+                background-color: rgb(235, 63, 118);
+                color: rgb(253, 249, 249);}
+        }
+
+        p{
+            font-size: 19px;
+            color:rgb(235, 63, 118);
+            margin-top: 10px;
+            margin-bottom: 10px;
+                ::selection{
+                background-color: rgb(235, 63, 118);
+                color: rgb(253, 249, 249);}
+        }
+    }
+    
+    img{
+        width: 600px;
+        height: 280px;
+        margin: 20px;
+    }
+}
 
 .joyas{
     .joyitas{
@@ -212,6 +255,7 @@
             font-size: 10px;
             margin: 10px;
             margin-bottom: 20px;
+            border-radius: 2%;
             
             img{
                 width: 250px;
@@ -260,7 +304,7 @@
         margin: 10px;
         margin-top: 10px;
         background-color:rgb(221, 187, 211) ;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: rgb(230, 17, 134);
     }
     .mensajito{
@@ -319,7 +363,7 @@
         margin: 10px;
         margin-top: 10px;
         background-color:rgb(221, 187, 211) ;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: rgb(230, 17, 134);
         margin-bottom: 10px;
 
@@ -344,11 +388,49 @@
         padding: 10px;
         margin-bottom: 10px;
         margin-top: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
-
+.stock{
+    @extend %flex-center;
+    div{
+        width: 300px;
+        height: 380px;
+        border: 2px solid rgb(219, 71, 125);
+        text-align: center;    
+        font-size: 10px;
+        margin: 10px;
+        margin-bottom: 20px; 
+        border-radius: 2%;        
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 5px; 
+        }
+        h2{
+            font-size: 20px;
+            margin: 5px;
+            color: rgb(248, 9, 88);
+        }
+        h3{
+            font-size: 15px;
+            margin: 10px;
+            color: rgb(219, 71, 125);
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(219, 71, 125);
+            background-color: rgb(248, 248, 248);
+            padding: 5px;
+            border: 2px solid rgb(248, 9, 88);
+            border-radius: 5px;
+            margin: 10px;   
+            background-color: rgb(240, 203, 224);          
+          }
+    }
+}
 
 /*-- productos.html--*/
 
@@ -373,7 +455,7 @@
             font-size: 10px;
             margin: 10px;
             margin-bottom: 20px;             
-                       
+            border-radius: 2%;            
             img{
                 width: 250px;
                 height: 250px;

@@ -1,4 +1,4 @@
-.ofertas .ofertas-imperdibles, .blog .noticias, .joyas .joyitas, .listado .relacion-productos {
+.ofertas .ofertas-imperdibles, .blog .noticias, .joyas .joyitas, .stock, .listado .relacion-productos {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,15 +10,14 @@
   padding: 0; }
 
 body {
-  font-family: 'Mulish', sans-serif; }
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
 /*--header con BOOTSTRAP--*/
 .navbar .palabra {
   color: white;
   font-size: 40px;
   padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder; }
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 .navbar .navbar-nav a {
   font-size: 18px;
@@ -48,7 +47,7 @@ header .container-fluid .img {
   background-color: rgba(255, 186, 240, 0.555); }
 
 .lista {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: fantasy; }
 
 /*-- BOOTSTRAP APLICADO EN LAS PAGINAS--*/
 /*-- index.html--carrusel--*/
@@ -70,44 +69,50 @@ header .container-fluid .img {
   margin: 10px; }
 
 /*-- hover-*/
-.ofertas-imperdibles div:hover {
+.ofertas-imperdibles div {
   box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
 
+.ofertas-imperdibles div:hover {
+  transform: scale(1.03);
+  transition: 1s; }
+
+.grid-container img:hover {
+  transform: scale(1.05);
+  transition: 2s; }
+
 .joyitas div:hover {
+  transform: scale(1.03);
+  transition: 1s; }
+
+.joyitas div {
+  box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
+
+.relacion-productos div {
   box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
 
 .relacion-productos div:hover {
+  transform: scale(1.03);
+  transition: 1s; }
+
+.stock div:hover {
+  transition: 1s;
+  transform: scale(1.05); }
+
+.stock div {
   box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
   -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
   -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
 
-.ofertas-imperdibles div img {
-  transition: 1s; }
-
-.ofertas-imperdibles div img:hover {
-  transform: scale(1.1); }
-
-.grid-container img {
-  transition: 2s; }
-
-.grid-container img:hover {
-  transform: scale(1.1); }
-
-.joyitas div img {
-  transition: 1s; }
-
-.joyitas div img:hover {
-  transform: scale(1.1); }
-
-.relacion-productos div img {
-  transition: 1s; }
-
-.relacion-productos div img:hover {
-  transform: scale(1.1); }
+.blog div {
+  box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 11px 13px 13px 0px rgba(0, 0, 0, 0.54); }
 
 /*-- index.html--*/
 .bienvenidos {
@@ -123,7 +128,7 @@ header .container-fluid .img {
     width: 50%;
     height: 50px;
     flex-direction: column;
-    font-family: 'Mulish', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center; }
     .bienvenidos div h2 {
       font-size: 40px;
@@ -142,8 +147,8 @@ header .container-fluid .img {
         background-color: #eb3f76;
         color: #fdf9f9; }
   .bienvenidos img {
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 280px;
     margin: 20px; }
 
 .tendencia h1 {
@@ -154,7 +159,7 @@ header .container-fluid .img {
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .grid-container {
   width: 100%;
@@ -206,7 +211,8 @@ header .container-fluid .img {
   background-color: #f0cbe0;
   padding: 5px;
   margin-bottom: 10px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .ofertas .ofertas-imperdibles div {
   width: 300px;
@@ -215,7 +221,8 @@ header .container-fluid .img {
   text-align: center;
   font-size: 10px;
   margin: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 2%; }
   .ofertas .ofertas-imperdibles div img {
     width: 250px;
     height: 250px;
@@ -247,7 +254,7 @@ header .container-fluid .img {
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .blog .noticias div {
   width: 300px;
@@ -255,7 +262,8 @@ header .container-fluid .img {
   border: 2px solid #db477d;
   text-align: center;
   margin: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 2%; }
   .blog .noticias div img {
     width: 250px;
     height: 250px;
@@ -267,6 +275,43 @@ header .container-fluid .img {
     color: #db477d; }
 
 /*-- bisuteria.html--*/
+.explora {
+  background-image: url("../img/portada.jfif");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px; }
+  .explora div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center; }
+    .explora div h2 {
+      font-size: 40px;
+      color: #f80958;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .explora div h2 ::selection {
+        background-color: #eb3f76;
+        color: #fdf9f9; }
+    .explora div p {
+      font-size: 19px;
+      color: #eb3f76;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .explora div p ::selection {
+        background-color: #eb3f76;
+        color: #fdf9f9; }
+  .explora img {
+    width: 600px;
+    height: 280px;
+    margin: 20px; }
+
 .joyas .joyitas div {
   width: 300px;
   height: 380px;
@@ -274,7 +319,8 @@ header .container-fluid .img {
   text-align: center;
   font-size: 10px;
   margin: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 2%; }
   .joyas .joyitas div img {
     width: 250px;
     height: 250px;
@@ -309,7 +355,7 @@ header .container-fluid .img {
   margin: 10px;
   margin-top: 10px;
   background-color: #ddbbd3;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #e61186; }
 
 .contacto .mensajito {
@@ -343,7 +389,7 @@ header .container-fluid .img {
   margin: 10px;
   margin-top: 10px;
   background-color: #ddbbd3;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #e61186;
   margin-bottom: 10px; }
 
@@ -364,7 +410,39 @@ header .container-fluid .img {
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.stock div {
+  width: 300px;
+  height: 380px;
+  border: 2px solid #db477d;
+  text-align: center;
+  font-size: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 2%; }
+  .stock div img {
+    width: 250px;
+    height: 250px;
+    margin: 5px; }
+  .stock div h2 {
+    font-size: 20px;
+    margin: 5px;
+    color: #f80958; }
+  .stock div h3 {
+    font-size: 15px;
+    margin: 10px;
+    color: #db477d; }
+  .stock div a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #db477d;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border: 2px solid #f80958;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #f0cbe0; }
 
 /*-- productos.html--*/
 .descuento img {
@@ -379,7 +457,8 @@ header .container-fluid .img {
   text-align: center;
   font-size: 10px;
   margin: 10px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 2%; }
   .listado .relacion-productos div img {
     width: 250px;
     height: 250px;
@@ -416,8 +495,7 @@ footer {
       background-color: #c20f48;
       color: white;
       font-size: 50px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: bolder; }
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
       footer .footer-contenedor p span {
         color: #eeb4e4; }
         footer .footer-contenedor p span ::selection {
@@ -433,24 +511,34 @@ footer {
       background-color: #eb3f76;
       color: #fdf9f9; }
 
+@media screen and (max-width: 1140px) {
+  .carousel-inner {
+    width: 100%;
+    height: 400px;
+    padding: 10px; } }
+
 @media screen and (max-width: 1150px) {
   .carousel-item {
     width: 100%;
     height: 350px;
-    padding: 10px; } }
+    padding: 10px; }
+  .explora {
+    flex-direction: column; }
+  .explora div {
+    width: 80%;
+    height: 50%; } }
 
 @media screen and (max-width: 950px) {
   .bienvenidos {
     flex-direction: column; }
   .bienvenidos div {
     width: 80%;
+    height: 50%; }
+  .explora {
+    flex-direction: column; }
+  .explora div {
+    width: 80%;
     height: 50%; } }
-
-@media screen and (max-width: 1140px) {
-  .carousel-inner {
-    width: 100%;
-    height: 400px;
-    padding: 10px; } }
 
 @media screen and (max-width: 800px) {
   .grid-container {
@@ -463,7 +551,11 @@ footer {
   .carousel-inner {
     width: 100%;
     height: 300px;
-    padding: 10px; } }
+    padding: 10px; }
+  .explora img {
+    width: 400px;
+    height: 200px;
+    margin: 10px; } }
 
 @media screen and (max-width: 700px) {
   .carousel-item {
@@ -497,18 +589,22 @@ footer {
     font-size: 20px; }
   .tendencia h1 {
     font-size: 20px; }
-  footer .footer-contenedor p {
-    font-size: 20px; }
   .bienvenidos img {
     width: 300px;
     height: 180px;
     margin: 10px; }
+  .explora img {
+    width: 350px;
+    height: 180px;
+    margin: 5px; }
+  footer .logo {
+    display: none; }
   footer .footer-contenedor {
-    flex-direction: column;
-    padding: 2px; }
-  footer .enlaces a img {
-    width: 25px;
-    height: 25px; } }
+    flex-direction: column; }
+  footer .footer-contenedor .logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px; } }
 
 @media screen and (max-width: 450px) {
   .grid-container {
